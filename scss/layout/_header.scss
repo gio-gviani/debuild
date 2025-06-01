@@ -1,0 +1,33 @@
+header {
+  background-color: $black-bg;
+  border-bottom: 1px solid $white-sub;
+
+  padding: 12px 40px;
+
+  .header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      color: $white-main;
+      font-family: $font-main;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .header-navigation {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      a {
+        color: $white-main;
+        font-family: $font-main;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      img {
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+.welcome-section {
+  img {
+    border-radius: 12px;
+    height: 280px;
+    min-width: 400px;
+    object-fit: cover;
+  }
+  h1 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 60px;
+    width: 306px;
+  }
+
+  p {
+    color: $white-main;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  a {
+    margin-top: 32px;
+    background-color: $green-main;
+    padding: 12px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+.our-expertise-section {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 52px;
+  }
+  p {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+  }
+  .our-expertise-section-fiture-cards {
+    background-color: $green-sub;
+    border-radius: 1px solid $green-border;
+    border-radius: 8px;
+    margin: 6px;
+    padding: 16px;
+
+    min-height: 123px;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 12px;
+    }
+    h5 {
+      color: $white-main;
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    p {
+      color: $green-text;
+      font-family: $font-main;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 0;
+      max-width: 260px;
+    }
+  }
+}
+.portfolio-section {
+  h5 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 169px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  h6 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  p {
+    color: $green-text;
+    font-family: $font-main;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+.skills-section {
+  h5 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  .skills-section-cards {
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+    border: 1px solid $green-border;
+    border-radius: 8px;
+    background-color: $green-sub;
+    margin-bottom: 12px;
+  }
+  h6 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .col-3 {
+    padding: 0 6px;
+  }
+}
+.contact-section {
+  margin-bottom: 98px;
+  h5 {
+    color: $white-main;
+    font-family: $font-main;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 90px;
+  }
+  .contact-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: $white-main;
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    h3 {
+      color: $white-main;
+      font-family: $font-main;
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .contact-form {
+      max-width: 480px;
+      min-width: 160px;
+      width: 100%;
+      height: 64px;
+      background-color: $green-sub2;
+      padding: 8px;
+      border-radius: 12px;
+      display: flex;
+      input {
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $green-text;
+        font-family: $font-main;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24;
+        width: 100%;
+        margin-left: 8px;
+      }
+      button {
+        padding: 12px 22px;
+        border: none;
+        background-color: $green-main;
+        border-radius: 12px;
+        color: $white-main;
+        font-family: $font-main;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+}

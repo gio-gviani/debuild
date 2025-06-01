@@ -1,0 +1,16 @@
+body {
+    background-color: $black-bg;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 60px; 
+}
+
+@import "../layout/header";
+
+
+@import "../pages/main-page";
+
+@import "../layout/footer";
