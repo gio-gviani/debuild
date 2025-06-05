@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
-app.post("/subscribe", (req, res) => {
+app.post("/subscribe", async (req, res) => {
   const user_mail = req.body.user_mail;
   SendMailToDatabase(user_mail);
 
