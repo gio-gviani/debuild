@@ -1,9 +1,13 @@
-.welcome-section {
+.welcome-section {.col-6 {
+  min-width: 420px;
+}
   img {
     border-radius: 12px;
     height: 280px;
     min-width: 400px;
     object-fit: cover;
+    margin-bottom: 75px;
+    width: 100%;
   }
   h1 {
     color: $white-main;
@@ -67,7 +71,7 @@
     border-radius: 8px;
     margin: 6px;
     padding: 16px;
-
+    min-width: 240px;
     min-height: 123px;
     img {
       width: 24px;
@@ -93,6 +97,11 @@
   }
 }
 .portfolio-section {
+  .portfolio-section-cards-box {
+    min-width: 222px;
+    max-width: 550px;
+    margin-bottom: 50px;
+  }
   h5 {
     color: $white-main;
     font-family: $font-main;
@@ -133,6 +142,10 @@
   img {
     width: 24px;
     height: 24px;
+  }
+  .col {
+    min-width: 212px;
+    max-width: 251px;
   }
   .skills-section-cards {
     padding: 16px;

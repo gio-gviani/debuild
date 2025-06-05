@@ -135,7 +135,8 @@ table {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -160,9 +161,15 @@ header {
   padding: 12px 40px;
 }
 header .header-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .header-box h5 {
   color: #ffffff;
@@ -171,8 +178,12 @@ header .header-box h5 {
   font-weight: 700;
 }
 header .header-box .header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 36px;
 }
 header .header-box .header-navigation a {
@@ -186,12 +197,17 @@ header .header-box .header-navigation img {
   border-radius: 50%;
 }
 
+.welcome-section .col-6 {
+  min-width: 420px;
+}
 .welcome-section img {
   border-radius: 12px;
   height: 280px;
   min-width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 75px;
+  width: 100%;
 }
 .welcome-section h1 {
   color: #ffffff;
@@ -224,8 +240,13 @@ header .header-box .header-navigation img {
 }
 
 .our-expertise-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .our-expertise-section h4 {
   color: #ffffff;
@@ -255,6 +276,7 @@ header .header-box .header-navigation img {
   border-radius: 8px;
   margin: 6px;
   padding: 16px;
+  min-width: 240px;
   min-height: 123px;
 }
 .our-expertise-section .our-expertise-section-fiture-cards img {
@@ -279,6 +301,11 @@ header .header-box .header-navigation img {
   max-width: 260px;
 }
 
+.portfolio-section .portfolio-section-cards-box {
+  min-width: 222px;
+  max-width: 550px;
+  margin-bottom: 50px;
+}
 .portfolio-section h5 {
   color: #ffffff;
   font-family: "Manrope";
@@ -320,8 +347,14 @@ header .header-box .header-navigation img {
   width: 24px;
   height: 24px;
 }
+.skills-section .col {
+  min-width: 212px;
+  max-width: 251px;
+}
 .skills-section .skills-section-cards {
   padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 12px;
   border: 1px solid #3d5245;
@@ -351,9 +384,16 @@ header .header-box .header-navigation img {
   margin-bottom: 90px;
 }
 .contact-section .contact-section-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contact-section .contact-section-content p {
   color: #ffffff;
@@ -379,6 +419,8 @@ header .header-box .header-navigation img {
   background-color: #29382E;
   padding: 8px;
   border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .contact-section .contact-section-content .contact-form input {
@@ -406,12 +448,21 @@ header .header-box .header-navigation img {
 }
 
 footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0;
 }
 footer .footer-box .footer-media-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
@@ -421,4 +472,4 @@ footer .footer-box p {
   font-family: "Manrope";
   font-size: 16px;
   font-weight: 400;
-}
+}/*# sourceMappingURL=global.css.map */
