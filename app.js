@@ -18,9 +18,11 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
-app.post("/subscribe", async (req, res) => {
+app.post("/subscribe", (req, res) => {
   const user_mail = req.body.user_mail;
   SendMailToDatabase(user_mail);
+
+  res.status(200).send("Email added to Firestore");
 });
 
 app.use((req, res) => {
