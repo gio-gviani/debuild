@@ -22,7 +22,7 @@ app.post("/subscribe", async (req, res) => {
   const user_mail = req.body.user_mail;
   SendMailToDatabase(user_mail);
 
-  res.status(200).send("Email added to Firestore");
+  res.status(200).send(`Thank you for subscribing with ${user_mail}`);
 });
 
 app.use((req, res) => {
