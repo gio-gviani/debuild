@@ -17,7 +17,8 @@ app.get("/", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).send("Page not found");
+  res.status(404).send("Page not found TEST");
+
 });
 
 app.listen(PORT, () => {
