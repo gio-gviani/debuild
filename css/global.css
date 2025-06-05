@@ -196,6 +196,85 @@ header .header-box .header-navigation img {
   height: 40px;
   border-radius: 50%;
 }
+@media screen and (max-width: 520px) {
+  header .header-box .header-navigation {
+    display: none;
+  }
+}
+header .header-menu {
+  display: none;
+  position: relative;
+}
+header .header-menu button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header-menu button .header-menu-top-stick {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header-menu button .header-menu-middle-stick {
+  position: absolute;
+  top: 9px;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header-menu button .header-menu-bottom-stick {
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+header .header-menu button:active .header-menu-top-stick {
+  background-color: #179c4f;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+  height: 3px;
+}
+header .header-menu button:active .header-menu-middle-stick {
+  opacity: 0;
+}
+header .header-menu button:active .header-menu-bottom-stick {
+  background-color: #179c4f;
+  -webkit-transform: scaleX(1.2);
+      -ms-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 50%;
+  height: 3px;
+}
+@media screen and (max-width: 520px) {
+  header .header-menu {
+    display: block;
+    position: relative;
+  }
+}
 
 .welcome-section img {
   border-radius: 12px;
