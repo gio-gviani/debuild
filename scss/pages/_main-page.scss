@@ -4,7 +4,7 @@
   img {
     border-radius: 12px;
     height: 280px;
-    min-width: 400px;
+    
     object-fit: cover;
     margin-bottom: 75px;
     width: 100%;
@@ -16,7 +16,11 @@
     font-weight: 800;
     letter-spacing: -2px;
     line-height: 60px;
-    width: 306px;
+    max-width: 306px;
+    @media (max-width: 425px) {
+      font-size: 35px;
+      
+    }
   }
 
   p {

@@ -203,7 +203,6 @@ header .header-box .header-navigation img {
 .welcome-section img {
   border-radius: 12px;
   height: 280px;
-  min-width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 75px;
@@ -216,7 +215,12 @@ header .header-box .header-navigation img {
   font-weight: 800;
   letter-spacing: -2px;
   line-height: 60px;
-  width: 306px;
+  max-width: 306px;
+}
+@media (max-width: 425px) {
+  .welcome-section h1 {
+    font-size: 35px;
+  }
 }
 .welcome-section p {
   color: #ffffff;
