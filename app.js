@@ -22,7 +22,7 @@ app.post("/subscribe", async (req, res) => {
   const user_mail = req.body.user_mail;
   SendMailToDatabase(user_mail);
 
-  res.status(200);
+  res.status(200).redirect("/");
 });
 
 app.use((req, res) => {
