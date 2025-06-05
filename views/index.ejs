@@ -203,9 +203,9 @@
           Ready to start your next project? Reach out to us, and let's discuss
           how we can help you achieve your goals.
         </p>
-        <form class="contact-form">
-          <input placeholder="Your email" type="email" />
-          <button type="submit">Send</button>
+        <form class="contact-form" action="/subscribe" method="POST">
+          <input name="user_mail" placeholder="Your email" type="email" />
+          <button name="send_email" type="submit">Send</button>
         </form>
       </div>
     </section>
