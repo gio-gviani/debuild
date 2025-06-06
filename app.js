@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 
 app.get("/verify", (req, res) => {
-  res.render("verify.ejs", {
+  res.render("./pages/verify.ejs", {
     mode: req.query.mode,
     oobCode: req.query.oobCode,
   });
