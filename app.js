@@ -18,6 +18,15 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
+
+app.get("/verify", (req, res) => {
+  res.render("verify.ejs", {
+    mode: req.query.mode,
+    oobCode: req.query.oobCode,
+  });
+});
+
+
 app.post("/subscribe", async (req, res) => {
   const user_mail = req.body.user_mail;
   SendMailToDatabase(user_mail);
