@@ -9,7 +9,6 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   sendEmailVerification,
-  getUser,
 } from "firebase/auth";
 
 const firebaseConfig = {
