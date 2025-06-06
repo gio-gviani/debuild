@@ -29,10 +29,18 @@ const auth = getAuth(app);
 export const SendMailToDatabase = async (user_mail) => {
   try {
     const user = (
-      await createUserWithEmailAndPassword(auth, user_mail, "SUPER_STRONG_PASSWORD_123")
+      await createUserWithEmailAndPassword(
+        auth,
+        user_mail,
+        "SUPER_STRONG_PASSWORD_123"
+      )
     ).user;
     console.log("User created:", user.uid);
-    await sendEmailVerification(user);
+    const actionCodeSettings = {
+      url: "https://debuild.works/__/auth/action",
+      handleCodeInApp: false, // leave false to open in browser
+    };
+    await sendEmailVerification(user , actionCodeSettings);
     console.log("Verification email sent to:", user_mail);
 
     await addDoc(collection(db, "subscribers"), {
