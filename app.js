@@ -18,14 +18,16 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
+app.get("/verify", async (req, res) => {
+  const mode = req.query.mode;
+  const oobCode = req.query.oobCode;
+  if (mode !== "verifyEmail" || !oobCode) {
+    res.redirect("/404");
+  }
+  await applyActionCode(auth, oobCode);
 
-app.get("/verify", (req, res) => {
-  res.render("./pages/verify.ejs", {
-    mode: req.query.mode,
-    oobCode: req.query.oobCode,
-  });
+  res.render("./pages/verify.ejs");
 });
-
 
 app.post("/subscribe", async (req, res) => {
   const user_mail = req.body.user_mail;

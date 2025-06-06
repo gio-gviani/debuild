@@ -9,6 +9,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
   sendEmailVerification,
+  applyActionCode,
 } from "firebase/auth";
 
 // Firebase config (make sure values are correct and domain is authorized)
@@ -59,3 +60,4 @@ export const SendMailToDatabase = async (userEmail) => {
     console.error("Error during registration:", error.message);
   }
 };
+export { firebaseConfig, app, auth, applyActionCode, };
