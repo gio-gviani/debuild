@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const { SendMailToDatabase } = require("./functions/firebase.js");
+const { SendMailToDatabase, applyActionCode, auth } = require("./functions/firebase.js");
 
 const app = express();
 PORT = process.env.PORT || 3000;
